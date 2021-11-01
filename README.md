@@ -1,5 +1,5 @@
-# Standalone snake example of lager
-This is a copy of the snake example from [1]. Few changes necessary to make it compile and work with Qt6 were made.
+# Standalone snake/todo example of lager
+This is a copy of the snake and todo example from [1]. Few changes necessary to make it compile and work with Qt6 were made.
 
 ## Setup
 ### Get sources
@@ -14,12 +14,26 @@ git submodule update --init
 In the root of the repository.
 ```
 cmake -S . -B ./build
-cmake --build ./build --target lager_snake_qt6_standalone
 ```
 
+#### Snake
+Build snake
+```
+cmake --build ./build --target lager_qt6_standalone_snake
+```
 Play snake
 ```
-./build/src/lager_snake_qt6_standalone
+./build/src/snake/lager_qt6_standalone_snake
+```
+
+#### Todo
+Build todo
+```
+cmake --build ./build --target lager_qt6_standalone_todo
+```
+Run todo
+```
+./build/src/snake/lager_qt6_standalone_todo
 ```
 
 ## Problems
